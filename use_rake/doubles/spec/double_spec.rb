@@ -1,14 +1,6 @@
-class ClassRoom
-   def initialize(students)
-      @students = students
-   end
 
-   def list_student_names
-      @students.map(&:name).join(',')
-   end
-end
 
-require 'rake'
+require '../double'
 
 describe ClassRoom do
    it 'the list_student_names method should work correctly' do
